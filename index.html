@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slate-the school</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+.hero {
+  background:teal;
+  color:wheat;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.footer{
+
+  text-align:center;
+}
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    /* Logo */
+    .logo {
+      color:yellow;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Links */
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color:yellow;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff9800;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: #fff;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    
+    <img src="logo.png" width="150px">
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="celebrations.html">Celebrations</a></li>
+      <li><a href="activities.html">Co-curricular activities</a></li>
+      <li><a href="edu.html">Edutainment</a></li>
+      <li><a href="care.html">We Care</a></li>
+
+
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+<section id="home" class="hero">
+    <img src="home.png" width="300">
+    <h2>Learn Anything at Slate in Abids</h2>
+    <p>Sflate – The School is recognised as one o the best schools in Abids, Hyderabad. With many years of excellence, Slate has pioneered a fresh, student-centred approach to education in the city. </p>
+    <p>As the first Slate campus here, we champion a learning philosophy free from commercial pressures, focused solely on making a meaningful impact on every student’s life. Today, with eight thriving campuses, Slate – The School continues to uphold this legacy.</p>
+<p>
+Our curriculum and teaching embody high quality, relevance, forward-thinking values, and strong ethics. We complement the Cambridge curriculum with our distinctive, expert-designed SMAART and Sampoornatha Programs, thoughtfully crafted to equip students for a technology-driven future. </p>
+
+<p>Our campus continues to be regarded as one of the best schools in Abids, Hyderabad, and is trusted by both parents and experts.</p>
+
+</p>
+   
+    
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer">Copyright © 2026 SLATE - The School. Powered by SLATE - The School.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
